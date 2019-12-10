@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
 body
 {
   
@@ -6,7 +9,7 @@ body
 }
 header
 {
-    height: 100px;
+    height: 70px;
     background-color: #3cb1ff;
     display: flex;
     justify-content: space-between;
@@ -15,14 +18,27 @@ header
     top: 0;
     left: 0;
     right: 0;
+    border-bottom: 2px ridge #3cb1ff;;
 }
 .logo
 {
     margin-left: 20px;
     display: flex;
     align-items: flex-start;
-    width: 90px;
+    
+   
 
+}
+.logo>h3
+{
+    
+   
+    font-family: 'Righteous', cursive;
+    font-size: 1.4em;
+}
+.logo>img
+{
+    width: 80px;
 }
 
 
@@ -34,7 +50,7 @@ header
 }
 main
 {
-    margin-top: 95px;
+    margin-top: 70px;
     height: 1000px;
     display: flex;
     justify-content: space-between;
@@ -52,7 +68,8 @@ aside
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
-    line-height: 200%;
+    justify-content: space-between;
+   
 
 
     
@@ -62,23 +79,171 @@ article
 {
     height: 100%;
     width: 75%;
+    margin-top: 50px;
+    margin-right: 15px;
     
 }
 
-article>div
+.line
 {
     margin-top: 10px;
     border: 1px solid #e2e2e6; 
     height: 50px;
     width: 100%;
+    display: flex;
+    font-size: 0.9em;
+    padding-right: 3px;
+    padding-left: 3px;
 }
-
-aside>a
+.my_emails
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+}
+.my_emails>a
 {
     color: white;
     text-decoration: none;
 }
-aside>a:hover
+
+.my_emails>a:hover
 {
     font-weight: bold;
+}
+h3
+{
+    color: white;
+}
+
+.my_emails
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+}
+.folders>a
+{
+    color: white;
+    text-decoration: none;
+}
+.folders
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 200%;
+}
+
+.folders>a:hover
+{
+    font-weight: bold;
+}
+
+.settings
+{
+    position: fixed;
+    bottom: 0px;
+}
+
+.settings>a
+{
+    text-decoration: none;
+}
+
+.settings>a>h3:hover
+{
+    font-weight: bold;
+}
+
+.photo>img
+{
+    max-height: 60px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.mini
+{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.email_subject
+{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+.email_content
+{
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    width: 41%;
+    
+    
+}
+.hour
+{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.85em;
+    width: 9%;
+}
+
+.line:hover
+{
+    
+        transform: scale(1.02);
+      
+}
+
+@media (max-width: 500px)
+{
+aside
+{
+    display: none;
+}
+.line
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+
+    
+}
+article
+{
+  
+    width: 100%;
+}
+.mini
+{
+    width: 100%;
+}
+}
+
+.email_subject
+{
+    width: 100%;
+}
+.email_content
+{
+    width: 100%;
+}
+.hour
+{
+    width: 100%;
+}
+}
+
+
 }
