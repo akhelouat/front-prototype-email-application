@@ -1,0 +1,84 @@
+body
+{
+  
+    margin: 0px;
+ 
+}
+header
+{
+    height: 100px;
+    background-color: #3cb1ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo
+{
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    width: 90px;
+
+}
+
+
+.options_photo
+{
+    display: flex;
+    align-items: center;
+    
+}
+main
+{
+    margin-top: 95px;
+    height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding-left: 0%;
+}
+
+aside
+{
+    height: 100%;
+    width: 20%;
+    background-color: #4e4e4e;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    line-height: 200%;
+
+
+    
+}
+
+article
+{
+    height: 100%;
+    width: 75%;
+    
+}
+
+article>div
+{
+    margin-top: 10px;
+    border: 1px solid #e2e2e6; 
+    height: 50px;
+    width: 100%;
+}
+
+aside>a
+{
+    color: white;
+    text-decoration: none;
+}
+aside>a:hover
+{
+    font-weight: bold;
+}
