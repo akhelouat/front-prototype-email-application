@@ -63,6 +63,19 @@ header
     
     animation: opening_logo 1 5s;
 }
+.loading
+{
+    width: 0px;
+    height: 120px;
+    background-color: #3cb1ff;
+    position: fixed;
+    top: 270px;
+    left: 1000px;
+    animation: charge 1 9s;
+    
+   
+
+}
 .options
 {
     width: 70%;
@@ -251,19 +264,7 @@ h3
         transform: scale(1.02);
       
 }
-.loading
-{
-    width: 0px;
-    height: 300px;
-    background-color: #3cb1ff;
-    position: fixed;
-    top : 30%;
-    left: 40%;
-    animation: reverse_unseen 1 4s;
-    
- 
-    
-}
+
 .loading>img
 {
     width: 100%;
@@ -445,4 +446,40 @@ article
 
 
 }
+
+@keyframes charge {
+    0% {
+        width: 120px;
+        transform: rotate(0deg);
+        opacity: 100%;
+    
+
+    }
+
+
+    49%{
+        width: 120px;
+        opacity: 100%;
+    }
+
+    50%{
+        transform: rotate(720deg);
+        
+        opacity: 0%;
+    
+    }
+
+   
+
+    100%
+    {
+       transform: rotate(720deg);
+       
+       width: 0px;
+       opacity: 0%;
+
+    }
+}
+
+
 
