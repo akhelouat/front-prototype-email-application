@@ -54,12 +54,14 @@ header
     
    
     font-family: 'Righteous', cursive;
-    font-size: 1.4em;
+    font-size:1.4em;
+    animation: opening_title 1 5s;
 }
 .logo>img
 {
     width: 80px;
     
+    animation: opening_logo 1 5s;
 }
 .options
 {
@@ -352,10 +354,48 @@ article
 }
 }
 
+@keyframes opening_title {
+    0% {
+        font-size: 5em;
+        position: fixed;
+        top: 200px;
+        left: 470px;
+    }
+    90% {
+        font-size: 5em;
+        position: fixed;
+        top: 200px;
+        left: 470px;
+    }
+    100% {
+        font-size: 1.4em;
+    }
+}
+
+@keyframes opening_logo {
+    0% {
+       width: 300px; 
+       position: fixed;
+       top: 200px;
+       left: 200px;
+    }
+
+    90% {
+        width: 300px;
+        position: fixed;
+        top: 200px;
+        left: 200px;
+    }
+    100% {
+        width: 80px;
+    }
+
+}
+
 @keyframes reverse_unseen {
     0% {
         width: 300px;
-        background-color: black;
+        
     }
 
     99% {
