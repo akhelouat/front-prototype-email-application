@@ -5,6 +5,7 @@ body
 {
   
     margin: 0px;
+    background-color: #fafafc;
  
 }
 .menu
@@ -76,6 +77,26 @@ header
    
 
 }
+.loading_reverse
+{
+    max-width: 0px;
+    height: 120px;
+    background-color: #3cb1ff;
+    position: fixed;
+    top: 330px;
+    left: 930px;
+    
+    
+   
+
+}
+
+.loading_reverse>img
+{
+    width: 0px;
+    animation: charge_reverse 1 9s;
+
+}
 .options
 {
     width: 70%;
@@ -143,6 +164,7 @@ article
 
 .line
 {
+    background-color: white;
     margin-top: 10px;
     border: 1px solid #e2e2e6; 
     height: 50px;
@@ -269,7 +291,10 @@ h3
 {
     width: 100%;
 }
+@media (min-width: 500px)
+{
 
+}
 
 
 @media (max-width: 500px)
@@ -481,5 +506,38 @@ article
     }
 }
 
+@keyframes charge_reverse {
+    0% {
+        width: 80px;
+        transform: rotate(900deg);
+        opacity: 100%;
+    
+
+    }
+
+
+    49%{
+        width: 80px;
+        opacity: 100%;
+    }
+
+    50%{
+        transform: rotate(0deg);
+        
+        opacity: 0%;
+    
+    }
+
+   
+
+    100%
+    {
+       transform: rotate(0deg);
+       
+       width: 0px;
+       opacity: 0%;
+
+    }
+}
 
 
