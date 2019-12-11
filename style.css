@@ -169,7 +169,7 @@ article
     margin-top: 10px;
     border: 1px solid #e2e2e6; 
     height: 50px;
-    width: 100%;
+    width: 95%;
     display: flex;
     font-size: 0.9em;
     padding-right: 10px;
@@ -221,11 +221,18 @@ h3
 
 .settings
 {
+    width: 20%;
+    background-color: #616161;
+    justify-content: center;
     position: fixed;
     bottom: 0px;
     display: flex;
     align-items: center;
     animation: unseen 1 6s;
+}
+.settings:hover
+{
+    background-color: #777676;
 }
 
 .settings>a
