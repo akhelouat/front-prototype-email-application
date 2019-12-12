@@ -824,11 +824,11 @@ article
     position: fixed;
     bottom: 20px;
     right: 20px;
-    font-size: 3em;
+    font-size: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #4e4e4e;
+    color: #3cb1ff;
     
 }
 .new_message_hover
@@ -850,12 +850,23 @@ article
     
 
 }
-.new_message_icon:hover .new_message_hover 
+
+.new_message_icon:hover .new_mail
+{
+    display: block;
+    font-size: 0.2em;;
+    box-shadow: 4px 2px 2px grey;
+    border-radius: 5px;
+}
+#new_message_icon:hover .new_message_hover 
 {
     
     width: 300px;
     opacity: 100%;
+    font-size: 0.4em;
+    font-family: helvetica;
     transition: width 0.4s linear, opacity 0.3s linear ;
+
 }
 
 
@@ -873,4 +884,69 @@ article
     background-color: darkcyan;
     width: 600px;
     transition: width 3s linear, background-color 1s linear;
+}
+
+
+
+
+.new_mail
+{
+    width: 450px;
+    height: 600px;
+    border: 1px solid #3cb1ff ;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: white;
+    display: none;
+
+}
+.new_mail_title
+{
+    height: 8%;
+    width: 100%;
+    background-color: #3cb1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif,Arial;
+    border-radius: 3px 3px 0px 0px;
+}
+.new_mail_content
+{
+    height: 92%;
+    width: 100%;
+    padding: 5%;
+
+    
+}
+.mail_title
+{
+    height: 10%;
+    width: 90%;
+   
+
+    
+}
+.mail_recipient
+{
+    height: 10%;
+    width: 90%;
+    
+
+}
+.mail_textarea
+{
+    height: 70%;
+    widows: 90%;
+    
+
+}
+.new_mail_bottom
+{
+    height: 10%;
+    width: 90%;
+    
 }
