@@ -146,6 +146,7 @@ aside
     align-items: center;
     padding-top: 30px;
     justify-content: space-between;
+    
    
 
 
@@ -167,7 +168,7 @@ article
 {
     background-color: white;
     margin-top: 10px;
-    border: 1px solid #e2e2e6; 
+    border-bottom: 1px solid #e2e2e6; 
     height: 50px;
     width: 95%;
     display: flex;
@@ -812,4 +813,64 @@ article
 .menu>img
 {
     max-width: 30px;
+}
+
+.new_message_icon
+{
+
+    
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4e4e4e;
+    
+}
+.new_message_hover
+{
+    
+    position: fixed;
+    
+    bottom: 20px;
+    right: 120px;
+    width: 0px;
+    height: 100px;
+    font-size: 0.8em;
+    color: black;
+    transition: width 1s linear;
+    display: flex;
+    align-items: center;
+    opacity: 0%;
+    text-overflow: clip;
+    
+
+}
+.new_message_icon:hover .new_message_hover 
+{
+    
+    width: 300px;
+    opacity: 100%;
+    transition: width 0.4s linear, opacity 0.3s linear ;
+}
+
+
+
+
+.test
+{
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+}
+
+.test:hover
+{
+    background-color: darkcyan;
+    width: 600px;
+    transition: width 3s linear, background-color 1s linear;
 }
