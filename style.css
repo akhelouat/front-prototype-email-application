@@ -275,7 +275,7 @@ h3
 
 .email_subject
 {
-    font-weight: bold;
+    
     display: flex;
     align-items: center;
     width: 25%;
@@ -348,7 +348,12 @@ header
 
 
 @media (max-width: 500px)
+
 {
+    .menu
+    {
+        animation: unseen 1 6s;
+    }
  
     .loading_reverse>img
 {
@@ -751,4 +756,60 @@ article
         left: 177px;
 
     }
+}
+
+
+
+
+ 
+#mobile_menu, #mobile_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#mobile_menu {
+ 
+   background:#3cb1ff;
+   color:white;
+   font-size: 0.7em;
+    
+}
+#mobile_menu> li {
+ 
+    display: inline-block;
+    margin:0px 19px;
+    padding:10px;
+}
+#mobile_menu ul li {
+     
+    padding:10px;
+    background:#4e4e4e;
+    color:white;
+     
+}
+#mobile_menu a {
+    text-decoration: none;
+    color:white;
+}
+#mobile_menu ul {
+    position: absolute;
+    text-align:left;
+    margin:10px 0px 0px -14px ;
+ 
+    display:none;
+     
+}
+#mobile_menu li:hover ul {
+ 
+    display:block;
+}
+ 
+#mobile_menu li:hover{
+    background:#3cb1ff;
+     
+}
+
+.menu>img
+{
+    max-width: 30px;
 }
