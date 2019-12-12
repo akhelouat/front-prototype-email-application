@@ -314,6 +314,13 @@ h3
 }
 @media (min-width: 500px)
 {
+    .new_message_icon:hover .new_mail
+{
+    display: block;
+    font-size: 0.2em;;
+    box-shadow: 4px 2px 2px grey;
+    border-radius: 5px;
+}
 .loading_reverse>img
 {
   
@@ -851,13 +858,7 @@ article
 
 }
 
-.new_message_icon:hover .new_mail
-{
-    display: block;
-    font-size: 0.2em;;
-    box-shadow: 4px 2px 2px grey;
-    border-radius: 5px;
-}
+
 #new_message_icon:hover .new_message_hover 
 {
     
