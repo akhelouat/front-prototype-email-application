@@ -103,7 +103,7 @@ header
     width: 70%;
     display: flex;
     justify-content: space-between;
-    animation: unseen 1 7s;
+    animation: unseen 1 6s;
 }
 .options>a
 {
@@ -256,7 +256,7 @@ h3
     margin: 5px;
     display: flex;
     align-items: center;
-    animation: unseen 1 8s;
+    animation: unseen 1 6s;
 
     
 }
