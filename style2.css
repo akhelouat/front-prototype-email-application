@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro&display=swap');
+
+
 body
 {
   
@@ -305,6 +308,50 @@ h3
 }
 @media (min-width: 500px)
 {
+    .nm_title
+    {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding-left: 2%;
+    }
+    .nm_title>a
+    {
+        color: white;
+        width: 30px;
+        background-color: orange;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    .nm_subject
+    {
+     padding-left: 40px;
+    }
+    .nm_receiver
+    {
+        padding-left: 40px;
+
+    }
+    .nm_content
+    {
+        padding-left: 40px;
+
+    }
+    .nm_options
+    {
+        padding-left: 40px;
+
+    }
+    .nm_send
+    {
+        padding-left: 50px;
+
+    }
     .new_message_icon:hover .new_mail
 {
     display: block;
@@ -351,29 +398,32 @@ article
 {
     height: 700px;
     width: 70%;
-   
+    
    margin-right: 5%;
    margin-top: 50px;
-   border: 1px solid #3cb1ff;
+   
+   border: 1px solid #4e4e4e;
+   
 }
 .nm_title
 {
-    width: 100%;
+    border-bottom: 1px solid #4e4e4e;
+
+    width: 98%;
     height: 6%;
     background-color: #3cb1ff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
+
+    font-family: 'Source Sans Pro', sans-serif;
     color: white;
-    font-family: Helvetica;
     font-weight: bold;
     font-size: 1.5em;
 }
 
-
 .nm_subject
 {
-    background-color: ;
+    background-color: 
     width: 100%;
     height: 7%;
 }
@@ -387,32 +437,44 @@ article
 .nm_content
 {
 background-color: ;
-height: 40%;
+height: 55%;
 }
 
 .nm_options
 {
 color: black;
+height: 50px;
+
 }
 
-.nm_send
+
+.nm_send>input
 {
 
+background-color: #3cb1ff;
+color: white;
+width: 100px;
+height: 30px;
 }
 
 
 @media (max-width: 500px) {
 
-.nm_title
-{
-    background-color: white;
-    color: #3cb1ff;
-}
+    .nm_title
+    {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
     article
 {
     height: 100%;
     width: 100%;
-   
+    padding-left: 0%;
+    padding-top: 0px;
+
    margin-right: 0%;
    margin-top: 20px;
    border: none;

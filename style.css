@@ -8,6 +8,10 @@ body
     background-color: #fafafc;
  
 }
+a
+{
+    text-decoration: none;
+}
 .menu
 {
     color: white;
@@ -114,8 +118,6 @@ header
 {
     font-weight: bold;
 }
-
-
 .options_photo
 {
     display: flex;
@@ -258,10 +260,7 @@ h3
     display: flex;
     align-items: center;
     animation: unseen 1 6s;
-
-    
 }
-
 .mini
 {
     display: flex;
@@ -312,6 +311,12 @@ h3
 {
     width: 100%;
 }
+
+
+
+
+
+
 @media (min-width: 500px)
 {
     .new_message_icon:hover .new_mail
@@ -355,27 +360,34 @@ header
 }
 
 
+
+
+
+
+
+
+
 @media (max-width: 500px)
 
 {
-    .menu
+.menu
     {
         animation: unseen 1 6s;
     }
  
-    .loading_reverse>img
+.loading_reverse>img
 {
   
     animation: charge_reverse_mobile 1 9s;
 
 }
-    .loading>img
+.loading>img
 {
 
     animation: charge_mobile 1 9s;
     
 }
-    .logo>h3
+.logo>h3
 {
     
    
@@ -383,7 +395,7 @@ header
     animation: opening_title_mobile 1 5s;
 }
 
-    .logo>img
+.logo>img
     {
       
         
@@ -430,7 +442,6 @@ article
     width: 100%;
 }
 
-
 .hour
 {
     width: 100%;
@@ -469,6 +480,13 @@ article
     width: 20%;
 }
 }
+
+
+
+
+
+
+
 
 @keyframes opening_title {
     0% {
@@ -838,6 +856,12 @@ article
     color: #3cb1ff;
     
 }
+.new_message_icon>a
+{
+    color:#3cb1ff;
+    
+}
+
 .new_message_hover
 {
     
@@ -870,22 +894,6 @@ article
 
 }
 
-
-
-
-.test
-{
-    background-color: chocolate;
-    width: 100px;
-    height: 100px;
-}
-
-.test:hover
-{
-    background-color: darkcyan;
-    width: 600px;
-    transition: width 3s linear, background-color 1s linear;
-}
 
 
 
@@ -951,3 +959,5 @@ article
     width: 90%;
     
 }
+
+
