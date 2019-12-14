@@ -396,7 +396,7 @@ header
 
 article
 {
-    height: 700px;
+    height: 750px;
     width: 70%;
     
    margin-right: 5%;
@@ -437,7 +437,7 @@ article
 .nm_content
 {
 background-color: ;
-height: 55%;
+height: 50%;
 }
 
 .nm_options
@@ -447,6 +447,26 @@ min-height: 50px;
 
 }
 
+.nm_options>i
+{
+    color: #3cb1ff ;
+    font-size: 1.3em;
+}
+
+.nm_options:hover .nm_options_visible{
+    opacity: 100%;
+}
+
+.nm_options_visible
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100px;
+    width: 550px;
+    opacity: 0%;
+}
 
 .nm_send>input
 {
@@ -459,6 +479,19 @@ border-radius: 12px;
 font-weight: bold;
 font-size: 1.1em;
 }
+
+textarea
+{
+    width: 85%;
+    height: 350px;
+}
+.nm_send
+{
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 
 @media (max-width: 500px) {
