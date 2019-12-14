@@ -317,7 +317,7 @@ h3
 
 
 
-@media (min-width: 500px)
+@media (min-width: 500px)  /* Wide screen only */
 {
     .new_message_icon:hover .new_mail
 {
@@ -367,7 +367,7 @@ header
 
 
 
-@media (max-width: 500px)
+@media (max-width: 500px)     /* Mobile screen only */
 
 {
 .menu

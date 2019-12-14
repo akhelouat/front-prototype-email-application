@@ -443,7 +443,7 @@ height: 55%;
 .nm_options
 {
 color: black;
-height: 50px;
+min-height: 50px;
 
 }
 
@@ -453,8 +453,11 @@ height: 50px;
 
 background-color: #3cb1ff;
 color: white;
-width: 100px;
-height: 30px;
+width: 180px;
+height: 40px;
+border-radius: 12px;
+font-weight: bold;
+font-size: 1.1em;
 }
 
 
@@ -462,10 +465,44 @@ height: 30px;
 
     .nm_title
     {
-        justify-content: center;
+        justify-content: space-between;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
         align-items: center;
+        background-color: white;
+        color: #3cb1ff ;
+        margin-bottom: 30px;
 
     }
+    .nm_title>a
+    {
+        background-color: orange;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 8px;
+
+    }
+    textarea
+    {
+        width: 95%;
+        height: 300px;
+    }
+    .nm_content
+    {
+        height: 320px;
+    }
+    .nm_send
+    {
+        display: flex;
+        justify-content: center;
+    }
+   
 
 
     article
