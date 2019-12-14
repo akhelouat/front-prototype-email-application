@@ -370,6 +370,7 @@ header
 @media (max-width: 500px)     /* Mobile screen only */
 
 {
+    
 .menu
     {
         animation: unseen 1 6s;
